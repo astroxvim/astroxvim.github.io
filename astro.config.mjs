@@ -9,4 +9,7 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://astroxvim.github.io',
   integrations: [mdx(), sitemap(), tailwind(), icon()],
+  server: {
+    host: '127.0.0.1',
+  }
 });
